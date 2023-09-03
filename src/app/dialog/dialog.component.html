@@ -1,0 +1,41 @@
+<h1 mat-dialog-title>Add Employee Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="employeeForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Employee Name</mat-label>
+            <input formControlName="employeeName" matInput placeholder="Employee Name">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Employee Type</mat-label>
+            <mat-select formControlName="employeeType" placeholder="Category">
+                <mat-option value="Fulltime">Full Time</mat-option>
+                <mat-option value="Parttime">Part Time</mat-option>
+                <mat-option value="Intern">Intern</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Choose a date</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <label for=""><h3>Employee Department</h3></label>
+        <mat-radio-group class="example-radio-group" formControlName="department">
+            <mat-radio-button class="example-radio-button" *ngFor="let dept of department" [value]="dept">
+                {{dept}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline">
+            <mat-label>Salary</mat-label>
+            <input formControlName="salaryInfo" type="number" matInput placeholder="Salary">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Comment</mat-label>
+            <textarea formControlName="comment" matInput></textarea>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 5px;" mat-raised-button color="primary" (click)="addEmployee()">{{actionBtn}}</button>
+</div>

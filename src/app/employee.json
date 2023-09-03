@@ -1,0 +1,30 @@
+{
+  "employeeList": [
+    {
+      "employeeName": "Abcd",
+      "employeeType": "Parttime",
+      "department": "QA",
+      "comment": "Hi",
+      "date": "2022-11-30T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "employeeName": "Xyz",
+      "employeeType": "Intern",
+      "department": "Dev",
+      "comment": "Hello",
+      "date": "2022-12-22T18:30:00.000Z",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

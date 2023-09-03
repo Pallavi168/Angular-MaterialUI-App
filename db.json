@@ -1,0 +1,32 @@
+{
+  "employeeList": [
+    {
+      "employeeName": "Pallavi Rani",
+      "employeeType": "Parttime",
+      "date": "2023-09-02T18:30:00.000Z",
+      "department": "Dev",
+      "salaryInfo": "",
+      "comment": "Dev Employee",
+      "id": 1
+    },
+    {
+      "employeeName": "Abc",
+      "employeeType": "Parttime",
+      "date": "2023-09-01T18:30:00.000Z",
+      "department": "QA",
+      "salaryInfo": "",
+      "comment": "Hi",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
